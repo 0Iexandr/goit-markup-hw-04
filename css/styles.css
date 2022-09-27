@@ -335,12 +335,18 @@ img {
     height: auto;
 }
 
-.filter-container li:focus, 
-.filter-container li:hover {
+.filter-container a {
+    display: block;
+    text-decoration: none;
+}
+
+.filter-container a:focus, 
+.filter-container a:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .filter-container h2 {
+    color: var(--main-text-color);
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -355,7 +361,10 @@ img {
 }
 
 .our-advantages-svg-container {
-    padding: 25px 100px 25px 100px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
     background: var(--team-section-bg-color);
 }
@@ -368,13 +377,17 @@ img {
 
 .team-card-svg-list a {
     fill: var(--team-card-icon-color);
-    padding: 12px;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .team-card-svg-list li {
     width: 44px;
+    height: 44px;
     border-radius: 50%;
     box-shadow: none;
 }
@@ -400,11 +413,20 @@ img {
     column-gap: 30px;
 }
 
+.regular-customers-list li {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+}
+
 .regular-customers-list a {
     fill: var(--team-card-icon-color);
     border-radius: 4px;
-    padding: 16px 32px 16px 32px;
+    height: 100%;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -416,8 +438,7 @@ img {
 }
 
 .footer-social-title {
-    font-size: 14px;
-    margin: 12px 0 20px 0;
+    margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -426,6 +447,7 @@ img {
 
 .footer-data-container {
     display: flex;
+    align-items: baseline;
     column-gap: 70px;
 }
 
@@ -435,12 +457,21 @@ img {
     justify-content: center;
 }
 
+.footer-svg-list li {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
 .footer-svg-list a {
     fill: var(--white-color);
     background: rgba(255, 255, 255, 0.1);
-    padding: 12px;
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-svg-list a:hover, 
